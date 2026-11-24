@@ -1,0 +1,16 @@
+{
+  "name": "biobot-workspace",
+  "version": "1.0.0",
+  "description": "BioBot - Computational Biology Educational Assistant",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build"
+  }
+}
